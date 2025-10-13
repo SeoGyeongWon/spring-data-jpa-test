@@ -1,0 +1,56 @@
+### New Post
+POST http://localhost:8080/api/posts
+Content-Type: application/json
+
+{
+  "author": "codeit",
+  "password": "001122",
+  "title": "First post",
+  "content": "Hello, this is my first post.",
+  "tags": ["greeting", "first"]
+}
+
+### Get Post 1
+GET http://localhost:8080/api/posts/1
+
+### Update Post 1
+PUT http://localhost:8080/api/posts/1
+Content-Type: application/json
+
+{
+  "password": "001122",
+  "title": "Say, Hello.",
+  "content": "Hello, this is my first post.",
+  "tags": ["greeting", "first", "hello"]
+}
+
+### Update Post 1, wrong password
+PUT http://localhost:8080/api/posts/1
+Content-Type: application/json
+
+{
+  "password": "000000",
+  "title": "Say, Hello.",
+  "content": "WRONG PASSWORD",
+  "tags": ["greeting", "wrong password"]
+}
+
+### Get All Posts
+GET http://localhost:8080/api/posts
+
+
+### Delete Post 1, wrong password
+DELETE http://localhost:8080/api/posts/1
+Content-Type: application/json
+
+{
+    "password": "000000"
+}
+
+### Delete Post 1
+DELETE http://localhost:8080/api/posts/1
+Content-Type: application/json
+
+{
+  "password": "001122"
+}

@@ -1,4 +1,4 @@
-package codeit.sb06.springtest.entity;
+package codeit.sb06.simplepost.entity;
 
 import jakarta.persistence.*;
 import lombok.AccessLevel;

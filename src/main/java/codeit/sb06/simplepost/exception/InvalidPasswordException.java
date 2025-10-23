@@ -1,4 +1,4 @@
-package codeit.sb06.springtest.exception;
+package codeit.sb06.simplepost.exception;
 
 public class InvalidPasswordException extends RuntimeException {
     public InvalidPasswordException(String message) {

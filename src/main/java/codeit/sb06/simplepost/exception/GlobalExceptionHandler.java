@@ -1,4 +1,4 @@
-package codeit.sb06.springtest.exception;
+package codeit.sb06.simplepost.exception;
 
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.http.ResponseEntity;

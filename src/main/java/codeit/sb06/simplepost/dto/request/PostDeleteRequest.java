@@ -1,4 +1,4 @@
-package codeit.sb06.springtest.dto.request;
+package codeit.sb06.simplepost.dto.request;
 
 import jakarta.validation.constraints.NotBlank;
 

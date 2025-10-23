@@ -1,10 +1,10 @@
-package codeit.sb06.springtest.controller;
+package codeit.sb06.simplepost.controller;
 
-import codeit.sb06.springtest.dto.request.PostCreateRequest;
-import codeit.sb06.springtest.dto.request.PostDeleteRequest;
-import codeit.sb06.springtest.dto.request.PostUpdateRequest;
-import codeit.sb06.springtest.dto.response.PostResponse;
-import codeit.sb06.springtest.service.PostService;
+import codeit.sb06.simplepost.dto.request.PostCreateRequest;
+import codeit.sb06.simplepost.dto.request.PostDeleteRequest;
+import codeit.sb06.simplepost.dto.request.PostUpdateRequest;
+import codeit.sb06.simplepost.dto.response.PostResponse;
+import codeit.sb06.simplepost.service.PostService;
 import jakarta.validation.Valid;
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.HttpStatus;
@@ -12,7 +12,6 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
-import java.util.Map;
 
 @RestController
 @RequestMapping("/api/posts")

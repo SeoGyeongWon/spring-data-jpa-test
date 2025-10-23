@@ -1,6 +1,6 @@
-package codeit.sb06.springtest.dto.response;
+package codeit.sb06.simplepost.dto.response;
 
-import codeit.sb06.springtest.entity.Post;
+import codeit.sb06.simplepost.entity.Post;
 import lombok.Builder;
 
 import java.time.LocalDateTime;

@@ -1,8 +1,8 @@
-package codeit.sb06.springtest.dto.request;
+package codeit.sb06.simplepost.dto.request;
 
-import codeit.sb06.springtest.dto.request.validator.ValidContent;
-import codeit.sb06.springtest.dto.request.validator.ValidTitle;
-import codeit.sb06.springtest.entity.Post;
+import codeit.sb06.simplepost.dto.request.validator.ValidContent;
+import codeit.sb06.simplepost.dto.request.validator.ValidTitle;
+import codeit.sb06.simplepost.entity.Post;
 import jakarta.validation.constraints.NotBlank;
 import jakarta.validation.constraints.Pattern;
 import lombok.Builder;

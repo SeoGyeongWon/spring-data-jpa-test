@@ -1,12 +1,12 @@
-package codeit.sb06.springtest.service;
+package codeit.sb06.simplepost.service;
 
-import codeit.sb06.springtest.dto.request.PostCreateRequest;
-import codeit.sb06.springtest.dto.request.PostUpdateRequest;
-import codeit.sb06.springtest.dto.response.PostResponse;
-import codeit.sb06.springtest.entity.Post;
-import codeit.sb06.springtest.exception.InvalidPasswordException;
-import codeit.sb06.springtest.exception.PostNotFoundException;
-import codeit.sb06.springtest.repository.PostRepository;
+import codeit.sb06.simplepost.dto.request.PostCreateRequest;
+import codeit.sb06.simplepost.dto.request.PostUpdateRequest;
+import codeit.sb06.simplepost.dto.response.PostResponse;
+import codeit.sb06.simplepost.entity.Post;
+import codeit.sb06.simplepost.exception.InvalidPasswordException;
+import codeit.sb06.simplepost.exception.PostNotFoundException;
+import codeit.sb06.simplepost.repository.PostRepository;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;

@@ -1,4 +1,4 @@
-package codeit.sb06.springtest.dto.request.validator;
+package codeit.sb06.simplepost.dto.request.validator;
 
 import jakarta.validation.Constraint;
 import jakarta.validation.Payload;

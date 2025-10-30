@@ -8,7 +8,6 @@ import codeit.sb06.simplepost.exception.InvalidPasswordException;
 import codeit.sb06.simplepost.exception.PostNotFoundException;
 import codeit.sb06.simplepost.repository.PostRepository;
 import lombok.RequiredArgsConstructor;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
@@ -20,7 +19,7 @@ import java.util.stream.Collectors;
 @Transactional(readOnly = true)
 public class PostService {
 
-    private PostRepository postRepository;
+    private final PostRepository postRepository;
 
     @Transactional
     public PostResponse savePost(PostCreateRequest request) {
@@ -33,6 +32,7 @@ public class PostService {
         Post post = findPostById(id);
         verifyPassword(post, request.password());
         post.update(request.title(), request.content(), request.tags());
+        postRepository.save(post);
         return PostResponse.from(post);
     }
 

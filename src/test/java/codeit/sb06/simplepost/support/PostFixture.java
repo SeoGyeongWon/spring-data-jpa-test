@@ -21,13 +21,17 @@ public class PostFixture {
         return post;
     }
 
-    public static Post createPostWithPassword(long id, String author, String title, String password) {
-        Post post = Post.builder()
+    public static Post createPostWithPassword(String author, String title, String password) {
+        return Post.builder()
                 .author(author)
                 .title(title)
                 .password(password)
                 .content("Content for " + title)
                 .build();
+    }
+
+    public static Post createPostWithPassword(long id, String author, String title, String password) {
+        Post post = createPostWithPassword(author, title, password);
         setPostId(post, id);
         return post;
     }
